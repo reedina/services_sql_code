@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS spm_teams (
 
 CREATE TABLE IF NOT EXISTS spm_projects (
  id serial primary key,
- name varchar(200),
+ name varchar(200) unique,
  team_id integer
 );
 
