@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS spm_users (
  id serial primary key,
  first_name varchar(200),
  last_name varchar(200),
- email varchar(200),
+ email varchar(200) unique,
  team_id integer
 );
 
