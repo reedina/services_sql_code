@@ -1,0 +1,22 @@
+GET
+api/buildRequest/<email>
+{  
+   user: api/users/<email>
+   projects: api/projects/team/id/<id>
+   environments: api/environments
+}
+
+
+
+POST
+api/buildRequest
+
+{
+   user:
+   project:
+   environment:
+}
+
+submits to environment/instance
+
+
