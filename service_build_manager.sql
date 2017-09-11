@@ -5,3 +5,11 @@ CREATE TABLE IF NOT EXISTS sbm_environments (
  description varchar(200),
  unique(name,type)
 );
+
+
+CREATE TABLE IF NOT EXISTS sbm_environment_instances (
+ id serial primary key,
+ environment_id integer,
+ expiration_string varchar(200),
+ expiration_time bigint
+);
