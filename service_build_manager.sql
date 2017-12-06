@@ -11,7 +11,10 @@ insert into sbm_environments(name, type, url) values ('test01', 'qa', 'http://lo
 
 CREATE TABLE IF NOT EXISTS sbm_environment_instances (
  id serial primary key,
+ name varchar(200),
  environment_id integer,
- expiration_string varchar(200),
- expiration_time bigint
+ deletion_time timestamp
 );
+
+
+insert into sbm_environment_instances (name, environment_id, deletion_time) values ('mikerap',1,'2017-12-12 17:00:00');
