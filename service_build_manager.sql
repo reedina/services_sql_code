@@ -18,3 +18,6 @@ CREATE TABLE IF NOT EXISTS sbm_environment_instances (
 
 
 insert into sbm_environment_instances (name, environment_id, deletion_time) values ('mikerap',1,'2017-12-12 17:00:00');
+
+
+ALTER TABLE sbm_environment_instances ADD COLUMN team_id integer;
